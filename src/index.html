@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- link jos library --> 
+    <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css" crossorigin="anonymous" />
+  
+    <!-- link swiper library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- link css -->
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-gray-200">
+  <body>
+<div class="page-wrapper relative z-[1] bg-white">   
     <!-- PHẦN CỦA DƯƠNG LÀM -->
 <header>
   <nav class="global-container">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 my-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./img/logo-dark.png" alt="logo" width="96" width="24" />
       </a>
@@ -190,37 +197,157 @@
     </div>
   </nav>
 </header>
-      </section>
-      <main>
-        <!-- bài mẫu là section-hero -->
-        <section id="info"></section>
+<main>  
+  <!-- bài mẫu là section-hero -->
+<section class="section-hero">
+  <div class="relative z-[1] rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+    <div class="global-container">
+      <div class="relative z-[1]">
+        <div class="mb-14 flex flex-col items-center text-center lg:mb-20 ">
+          <h1 class="mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+              Simplify your SaaS solution with AI
+          </h1>
+          <p class="mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px] jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+              Our AI SAAS tool is a cloud-based software delivery model. It
+              helps businesses forecast demand for products and services and
+              optimize inventory management and supply chain operations.
+          </p>
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full jos" data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+            <button type="button" class="relative overflow-hidden group border-2 border-black text-white bg-black hover:text-white font-medium rounded-full text-sm py-4 px-7">
+              <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+              <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Get started for free</a>
+            </button>
+            <button type="button" class="relative overflow-hidden group border-2 border-black text-black bg-transparent hover:text-white font-medium rounded-full text-sm px-5 py-4 text-center">
+              <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+              <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold  ">Learn more</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-img overflow-hidden rounded-2xl bg-black jos" data-jos_animation="zoom" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+        <img src="./img/hero-dashboard.jpg" alt="dashboard" id="hero-dashboard" width="1296" height="648" class="h-auto w-full">
+      </div>
+      <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
+      <div class="mx-auto mb-12 max-w-[7np15px] text-center lg:mb-16 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+        <p class="text-lg">
+            Companies of all sizes trust us to find AI SaaS critical to
+            their growth and innovation
+        </p>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper" space-between="30" slides-per-view="auto" pagination="true">
+          <div class="swiper-slide">
+            <img src="./img/brand-1.png" alt="brand-1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-2.png" alt="brand-2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-3.png" alt="brand-3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-4.png" alt="brand-4">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-5.png" alt="brand-5" >
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-1.png" alt="brand-1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-2.png" alt="brand-2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-3.png" alt="brand-3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-4.png" alt="brand-4">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/brand-5.png" alt="brand-5" >
+          </div>
+      </div>
+    
+      </div>
+    </div>
+    <!-- Hero Background Shape 1 -->
+    <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[500px]">
+    </div>
+    <!-- Hero Background Shape 2 -->
+    <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[400px] w-[400px] animate-spin rounded-[450px]">
+    </div>
+  </div>
+</section>
+ <!-- bài mẫu là section-service -->
+  <section id="features">
+  </section>
 
-        <!-- bài mẫu là section-service -->
-        <section id="features"></section>
+  <!-- bài mẫu là content-section-1 -->
+  <section id="accessible"></section>
 
-        <!-- bài mẫu là content-section-1 -->
-        <section id="accessible"></section>
+  <!-- bài mẫu là content-section-2 -->
+  <section id="providing"></section>
 
-        <!-- bài mẫu là content-section-2 -->
-        <section id="providing"></section>
+  <!-- PHẦN CỦA UYÊN LÀM    -->
 
-        <!-- PHẦN CỦA UYÊN LÀM    -->
+  <!-- bài mẫu là funfact-section -->
+  <section id="supportAI"></section>
 
-        <!-- bài mẫu là funfact-section -->
-        <section id="supportAI"></section>
+  <!-- bài mẫu là pricing-section -->
+  <section id="effectively"></section>
 
-        <!-- bài mẫu là pricing-section -->
-        <section id="effectively"></section>
+  <!-- bài mẫu là faq-section -->
+  <section id="quickAsk"></section>
 
-        <!-- bài mẫu là faq-section -->
-        <section id="quickAsk"></section>
-
-        <!-- bài mẫu là testimonial-section -->
-        <section id="feedback"></section>
-      </main>
+  <!-- bài mẫu là testimonial-section -->
+  <section id="feedback"></section>
+</main>
 
       <footer></footer>
     </div>
+</div> 
+    <!-- link jos library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jos-animation/0.9.2/jos.js"
+      integrity="sha512-ZbNmgrMmWwQspNz6WQ1HnqLEPMXE4PyJBVnuc10e4gwJhrycze2IzjDQPx4CxkOBnUyt5wNCekdeTRJOe8J4WA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      JOS.init();
+    </script>
+
+    <!-- link swiper library-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true, 
+        navigation: {
+          nextEl: '.swiper-button-next', 
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination', 
+          clickable: true,          
+        },
+        slidesPerView: 2,
+        spaceBetween: 105,
+        breakpoints: {
+          728: {
+            slidesPerView: 5, // Hiển thị 4 slide trên màn hình ≥ 1024px
+            spaceBetween: 30,
+          },
+        },
+        autoplay: {
+          delay: 4000,
+        },
+      });
+    </script>
+
+    <!-- flowbite -->
     <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
+    
   </body>
 </html>
