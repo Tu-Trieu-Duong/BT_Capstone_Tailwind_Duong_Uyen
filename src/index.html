@@ -19,7 +19,7 @@
     <!-- PHẦN CỦA DƯƠNG LÀM -->
 <header>
   <nav class="global-container">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4 ">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./img/logo-dark.png" alt="logo" width="96" width="24" />
       </a>
@@ -197,9 +197,11 @@
     </div>
   </nav>
 </header>
+
+
 <main>  
   <!-- bài mẫu là section-hero -->
-  <section class="section-hero">
+  <section id="section-hero">
     <div class="relative z-[1] rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
       <div class="global-container">
         <div class="relative z-[1]">
@@ -212,7 +214,7 @@
                 helps businesses forecast demand for products and services and
                 optimize inventory management and supply chain operations.
             </p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full jos" data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+            <div class="flex max-[450px]:flex-col flex-row items-center justify-center gap-6 w-full jos" data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
               <button type="button" class="relative overflow-hidden group border-2 hover:border-orange-700 border-black text-white bg-black hover:text-white font-medium rounded-full text-sm py-4 px-7">
                   <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
                   <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Get started for free</a>
@@ -370,10 +372,95 @@
   </section>
 
   <!-- bài mẫu là content-section-1 -->
-  <section id="accessible"></section>
+  <section id="content-section-1">
+    <div class="global-container">
+        <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
+            <!-- Content Left Block -->
+            <div class="order-2 overflow-hidden rounded-md md:order-1 jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+                <img src="./img/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full">
+            </div>
+            <!-- Content Left Block -->
+            <!-- Content Right Block -->
+            <div class="order-1 md:order-2 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+                <!-- Section Content Block -->
+                <div class="mb-6">
+                    <h2>Accessible to a wider audience</h2>
+                </div>
+                <!-- Section Content Block -->
+                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                        Advanced AI capabilities accessible to a broader audience,
+                        including small &amp; medium-sized businesses and individuals
+                        who may not have the resources or expertise to develop.
+                    </p>
+                    <p class="mb-7 last:mb-0">
+                        Advanced AI capabilities accessible to a broader audience,
+                        including small &amp; medium-sized businesses and individuals
+                        who may not have the resources or expertise to develop.
+                    </p>
+                </div>
+            </div>
+            <!-- Content Right Block -->
+        </div>
+    </div>
+    <!-- Section Container -->
+  </section>
 
   <!-- bài mẫu là content-section-2 -->
-  <section id="providing"></section>
+  <section id="content-section-2">
+    <!-- Section Spacer -->
+    <div class="pb-20 xl:pb-[150px]">
+        <!-- Section Container -->
+        <div class="global-container">
+            <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                <!-- Content Left Block -->
+                <div class="order-2 overflow-hidden rounded-md jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+                    <img src="./img/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full">
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div class="order-1 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+                    <!-- Section Content Block -->
+                    <div class="mb-6">
+                        <h2>Providing quick deploy solutions</h2>
+                    </div>
+                    <!-- Section Content Block -->
+                    <div class="text-lg leading-[1.4] lg:text-[21px]">
+                        <p class="mb-7 last:mb-0">
+                            Our AI SaaS solutions can be quickly deployed, enabling
+                            users to start benefiting from AI capabilities without
+                            lengthy setup and development times in fast-paced
+                            industries.
+                        </p>
+                        <ul class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
+                            <li class="flex items-start gap-x-3">
+                                <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                </div>
+                                Ready-to-use AI capabilities system
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                </div>
+                                Users can quickly integrate AI features
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                </div>
+                                Time savings translate to cost savings
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Content Right Block -->
+            </div>
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Spacer -->
+</section>
 
   <!-- PHẦN CỦA UYÊN LÀM    -->
 
@@ -422,7 +509,17 @@
         slidesPerView: 2,
         spaceBetween: 105,
         breakpoints: {
-          728: {
+          768: {
+            slidesPerView: 3, // Hiển thị 4 slide trên màn hình ≥ 1024px
+            spaceBetween: 30,
+          },
+
+          992: {
+            slidesPerView: 4, // Hiển thị 4 slide trên màn hình ≥ 1024px
+            spaceBetween: 30,
+          },
+
+          1200: {
             slidesPerView: 5, // Hiển thị 4 slide trên màn hình ≥ 1024px
             spaceBetween: 30,
           },
