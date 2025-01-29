@@ -570,12 +570,20 @@ video {
   right: -150px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-6 {
   right: 1.5rem;
 }
 
 .right-\[57px\] {
   right: 57px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-\[370px\] {
@@ -613,6 +621,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -625,8 +637,16 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
 .me-5 {
@@ -645,12 +665,20 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
 
 .inline-flex {
   display: inline-flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -673,6 +701,10 @@ video {
   height: 1px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[450px\] {
   height: 450px;
 }
@@ -681,16 +713,16 @@ video {
   height: 500px;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
 .h-auto {
   height: auto;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[50px\] {
-  height: 50px;
+.h-full {
+  height: 100%;
 }
 
 .w-10 {
@@ -709,6 +741,10 @@ video {
   width: 1.25rem;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
 .w-\[450px\] {
   width: 450px;
 }
@@ -717,12 +753,12 @@ video {
   width: 500px;
 }
 
-.w-full {
-  width: 100%;
+.w-\[70px\] {
+  width: 70px;
 }
 
-.w-\[400px\] {
-  width: 400px;
+.w-full {
+  width: 100%;
 }
 
 .max-w-\[510px\] {
@@ -760,6 +796,10 @@ video {
   animation: spin 1s linear infinite;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -782,6 +822,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-\[2px\] {
+  gap: 2px;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -807,6 +851,10 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-\[450px\] {
@@ -883,6 +931,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-\[30px\] {
+  padding: 30px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -937,6 +989,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -951,6 +1008,14 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.-tracking-\[0\.5px\] {
+  letter-spacing: -0.5px;
 }
 
 .text-black {
@@ -968,10 +1033,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-transform {
@@ -980,12 +1055,20 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-linear {
+  transition-timing-function: linear;
 }
 
 .global-container {
@@ -1139,6 +1222,7 @@ h5 {
   border-bottom-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
   max-width: 100%;
+  overflow: hidden;
 }
 
 header {
@@ -1163,6 +1247,24 @@ header {
   filter: blur(55px);
 }
 
+.hover\:border-0:hover {
+  border-width: 0px;
+}
+
+.hover\:border-b:hover {
+  border-bottom-width: 1px;
+}
+
+.hover\:border-orange-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(194 65 12 / var(--tw-border-opacity, 1));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
@@ -1183,7 +1285,33 @@ header {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:border-0 {
+  border-width: 0px;
+}
+
+.group:hover .group-hover\:border-transparent {
+  border-color: transparent;
+}
+
+.group:hover .group-hover\:border-orange-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(194 65 12 / var(--tw-border-opacity, 1));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
 @media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1207,6 +1335,10 @@ header {
     width: auto;
   }
 
+  .md\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1221,12 +1353,30 @@ header {
     border-width: 0px;
   }
 
+  .md\:border-2 {
+    border-width: 2px;
+  }
+
+  .md\:border-black {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
 
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .group:hover .md\:group-hover\:border-transparent {
+    border-color: transparent;
+  }
+
+  .group:hover .md\:group-hover\:border-orange-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(194 65 12 / var(--tw-border-opacity, 1));
   }
 }
 
@@ -1246,6 +1396,14 @@ header {
 
   .lg\:max-w-\[768px\] {
     max-width: 768px;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:rounded-bl-\[50px\] {
@@ -1271,8 +1429,16 @@ header {
     margin-bottom: 5rem;
   }
 
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .xl\:max-w-\[1076px\] {
     max-width: 1076px;
+  }
+
+  .xl\:max-w-\[746px\] {
+    max-width: 746px;
   }
 
   .xl\:max-w-\[980px\] {
@@ -1281,6 +1447,11 @@ header {
 
   .xl\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
