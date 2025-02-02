@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- link jos library --> 
-    <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css" crossorigin="anonymous" />
-  
-    <!-- link swiper library-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- link css -->
-    <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body>
-<div class="page-wrapper relative z-[1]">   
+  <!-- link jos library -->
+  <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
+    crossorigin="anonymous" />
+
+  <!-- link swiper library-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body>
+  <div class="page-wrapper relative z-[1]">
     <!-- PHẦN CỦA DƯƠNG LÀM -->
-<header>
-  <nav class="global-container">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4 ">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./img/logo-dark.png" alt="logo" width="96" width="24" />
-      </a>
-      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden" aria-controls="navbar-multi-level" aria-expanded="false">
-              <svg class="w-5 h-5 right-6 absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
+    <header>
+      <nav class="global-container">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4 ">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./img/logo-dark.png" alt="logo" width="96" width="24" />
+          </a>
+          <button data-collapse-toggle="navbar-multi-level" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
+            aria-controls="navbar-multi-level" aria-expanded="false">
+            <svg class="w-5 h-5 right-6 absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
 
-      <!-- Menu Demo -->
-      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-        <ul class="flex flex-col font-medium md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black  md:border-0  md:p-0 md:w-auto duration-500 me-5">Demo<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Demo-->
-              <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 text-black">
+          <!-- Menu Demo -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+            <ul
+              class="flex flex-col font-medium md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" data-dropdown-trigger="hover"
+                  class="flex items-center justify-between w-full py-2 px-3 text-black  md:border-0  md:p-0 md:w-auto duration-500 me-5">Demo<svg
+                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg></button>
+                <!-- Dropdown menu Demo-->
+                <div id="dropdownNavbar1"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 text-black">
                   <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
                     <li>
                       <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 01</a>
@@ -52,21 +65,27 @@
                       <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 04</a>
                     </li>
                   </ul>
-              </div>
-          </li>
+                </div>
+              </li>
 
-          <!-- Menu About -->
-          <li>
-            <a href="#" class="block py-2 px-3 text-black rounded-sm md:bg-transparen md:p-0 me-5" aria-current="page">About</a>
-          </li>
+              <!-- Menu About -->
+              <li>
+                <a href="#" class="block py-2 px-3 text-black rounded-sm md:bg-transparen md:p-0 me-5"
+                  aria-current="page">About</a>
+              </li>
 
-          <!-- Menu Services -->
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar0" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Services<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Services-->
-              <div id="dropdownNavbar0" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+              <!-- Menu Services -->
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar0" data-dropdown-trigger="hover"
+                  class="flex items-center justify-between w-full py-2 px-3 text-black md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Services<svg
+                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg></button>
+                <!-- Dropdown menu Services-->
+                <div id="dropdownNavbar0"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
                   <ul class="py-2 text-sm text-black font-medium" aria-labelledby="dropdownLargeButton">
                     <li>
                       <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500">Services</a>
@@ -75,463 +94,1181 @@
                       <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500 ">Services Details</a>
                     </li>
                   </ul>
-              </div>
-          </li>
+                </div>
+              </li>
 
-          <!-- Menu Pages -->
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Pages<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Pages-->
-              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+              <!-- Menu Pages -->
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Pages<svg
+                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg></button>
+                <!-- Dropdown menu Pages-->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
                   <ul class="py-2 text-sm text-black " aria-labelledby="dropdownLargeButton">
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown1" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:text-red-600 duration-500 font-medium">Blogs<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown1"
+                        data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:text-red-600 duration-500 font-medium">Blogs<svg
+                          class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                        </svg></button>
                       <!-- Dropdown menu Pages Blogs -->
-                      <div id="doubleDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm text-black hover:text-red-500 font-medium" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blogs</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blog Details</a>
-                            </li>
-                          </ul>
+                      <div id="doubleDropdown1"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                        <ul class="py-2 text-sm text-black hover:text-red-500 font-medium"
+                          aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blogs</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blog
+                              Details</a>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <!-- Dropdown menu Pages Team -->
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 text-black hover:text-red-600 font-medium">Team<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm font-medium text-black hover:text-red-600" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team Details</a>
-                            </li>
-                          </ul>
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2"
+                        data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 text-black hover:text-red-600 font-medium">Team<svg
+                          class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                        </svg></button>
+                      <div id="doubleDropdown2"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                        <ul class="py-2 text-sm font-medium text-black hover:text-red-600"
+                          aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team
+                              Details</a>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <!-- Dropdown menu Pages FAQ -->
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown3" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">FAQ<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-1</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-2</a>
-                            </li>
-                          </ul>
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown3"
+                        data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">FAQ<svg
+                          class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                        </svg></button>
+                      <div id="doubleDropdown3"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                        <ul class="py-2 text-sm" aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-1</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-2</a>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <!-- Dropdown menu Pages Blogs -->
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown4" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">Portfolio<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio Details</a>
-                            </li>
-                          </ul>
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown4"
+                        data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">Portfolio<svg
+                          class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                        </svg></button>
+                      <div id="doubleDropdown4"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                        <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio
+                              Details</a>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <!-- Dropdown menu Pages Pricing -->
                     <li>
-                      <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Pricing</a>
+                      <a href="#"
+                        class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Pricing</a>
                     </li>
                     <!-- Dropdown menu Pages Utilities -->
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown5" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Utilities<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Eror 404</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Login</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Signup</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Reset Password</a>
-                            </li>
-                          </ul>
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown5"
+                        data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Utilities<svg
+                          class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                        </svg></button>
+                      <div id="doubleDropdown5"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                        <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Eror
+                              404</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Login</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Signup</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Reset
+                              Password</a>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                   </ul>
                 </div>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="flex items-center justify-center">
-        <button type="button" class="relative overflow-hidden group hidden md:block text-black bg-transparent hover:text-white border border-gray-400 font-medium rounded-full text-sm px-8 py-3 text-center me-8">
-          <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
-          <a href="https://azzle.netlify.app/login" class="relative z-10 font-extrabold">Login</a>
-        </button>
-        <button type="button" class="relative overflow-hidden group hidden md:block text-white bg-black hover:text-white font-medium rounded-full text-sm px-7 py-3 text-center">
-          <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
-          <a href="https://azzle.netlify.app/signup" class="relative z-10 font-extrabold">Sign up free</a>
-        </button>
-      </div>  
-    </div>
-  </nav>
-</header>
-
-
-<main>  
-  <!-- bài mẫu là section-hero -->
-  <section id="section-hero">
-    <div class="relative z-[1] rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
-      <div class="global-container">
-        <div class="relative z-[1]">
-          <div class="mb-14 flex flex-col items-center text-center lg:mb-20 ">
-            <h1 class="mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
-                Simplify your SaaS solution with AI
-            </h1>
-            <p class="mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px] jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
-                Our AI SAAS tool is a cloud-based software delivery model. It
-                helps businesses forecast demand for products and services and
-                optimize inventory management and supply chain operations.
-            </p>
-            <div class="flex max-[450px]:flex-col flex-row items-center justify-center gap-6 w-full jos" data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
-              <button type="button" class="relative overflow-hidden group border-2 hover:border-orange-700 border-black text-white bg-black hover:text-white font-medium rounded-full text-sm py-4 px-7">
-                  <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
-                  <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Get started for free</a>
-              </button>
-              <button type="button" class="relative overflow-hidden group border-2 hover:border-orange-700 border-black text-black bg-transparent hover:text-white font-medium rounded-full text-sm px-5 py-4 text-center">
-                  <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
-                  <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Learn more</a>
-              </button>
-            </div>
-
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-center">
+            <button type="button"
+              class="relative overflow-hidden group hidden md:block text-black bg-transparent hover:text-white border border-gray-400 font-medium rounded-full text-sm px-8 py-3 text-center me-8">
+              <span
+                class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+              <a href="https://azzle.netlify.app/login" class="relative z-10 font-extrabold">Login</a>
+            </button>
+            <button type="button"
+              class="relative overflow-hidden group hidden md:block text-white bg-black hover:text-white font-medium rounded-full text-sm px-7 py-3 text-center">
+              <span
+                class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+              <a href="https://azzle.netlify.app/signup" class="relative z-10 font-extrabold">Sign up free</a>
+            </button>
           </div>
         </div>
-        <div class="hero-img overflow-hidden rounded-2xl bg-black jos" data-jos_animation="zoom" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
-          <img src="./img/hero-dashboard.jpg" alt="dashboard" id="hero-dashboard" width="1296" height="648" class="h-auto w-full">
+      </nav>
+    </header>
+
+    <main>
+      <!-- bài mẫu là section-hero -->
+      <section id="section-hero">
+        <div
+          class="relative z-[1] rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+          <div class="global-container">
+            <div class="relative z-[1]">
+              <div class="mb-14 flex flex-col items-center text-center lg:mb-20 ">
+                <h1 class="mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] jos" data-jos_once="1"
+                  data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+                  Simplify your SaaS solution with AI
+                </h1>
+                <p class="mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px] jos" data-jos_once="1"
+                  data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+                  Our AI SAAS tool is a cloud-based software delivery model. It
+                  helps businesses forecast demand for products and services and
+                  optimize inventory management and supply chain operations.
+                </p>
+                <div class="flex max-[450px]:flex-col flex-row items-center justify-center gap-6 w-full jos"
+                  data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+                  <button type="button"
+                    class="relative overflow-hidden group border-2 hover:border-orange-700 border-black text-white bg-black hover:text-white font-medium rounded-full text-sm py-4 px-7">
+                    <span
+                      class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+                    <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Get started for free</a>
+                  </button>
+                  <button type="button"
+                    class="relative overflow-hidden group border-2 hover:border-orange-700 border-black text-black bg-transparent hover:text-white font-medium rounded-full text-sm px-5 py-4 text-center">
+                    <span
+                      class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
+                    <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Learn more</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="hero-img overflow-hidden rounded-2xl bg-black jos" data-jos_animation="zoom" data-jos_once="1"
+              data-jos_counter="1" data-jos_scrolldirection="down">
+              <img src="./img/hero-dashboard.jpg" alt="dashboard" id="hero-dashboard" width="1296" height="648"
+                class="h-auto w-full">
+            </div>
+            <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
+            <div class="mx-auto mb-12 max-w-[7np15px] text-center lg:mb-16 jos" data-jos_once="1"
+              data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+              <p class="text-lg">
+                Companies of all sizes trust us to find AI SaaS critical to
+                their growth and innovation
+              </p>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper" space-between="30" slides-per-view="auto" pagination="true">
+                <div class="swiper-slide">
+                  <img src="./img/brand-1.png" alt="brand-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-2.png" alt="brand-2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-3.png" alt="brand-3">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-4.png" alt="brand-4">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-5.png" alt="brand-5">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-1.png" alt="brand-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-2.png" alt="brand-2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-3.png" alt="brand-3">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-4.png" alt="brand-4">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/brand-5.png" alt="brand-5">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Hero Background Shape 1 -->
+          <div
+            class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]">
+          </div>
+          <!-- Hero Background Shape 2 -->
+          <div
+            class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]">
+          </div>
         </div>
-        <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
-        <div class="mx-auto mb-12 max-w-[7np15px] text-center lg:mb-16 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
-          <p class="text-lg">
-              Companies of all sizes trust us to find AI SaaS critical to
-              their growth and innovation
-          </p>
-        </div>
-        <div class="swiper">
-          <div class="swiper-wrapper" space-between="30" slides-per-view="auto" pagination="true">
-            <div class="swiper-slide">
-              <img src="./img/brand-1.png" alt="brand-1">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-2.png" alt="brand-2">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-3.png" alt="brand-3">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-4.png" alt="brand-4">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-5.png" alt="brand-5" >
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-1.png" alt="brand-1">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-2.png" alt="brand-2">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-3.png" alt="brand-3">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-4.png" alt="brand-4">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/brand-5.png" alt="brand-5" >
-            </div>
-        </div>
-      
-        </div>
-      </div>
-      <!-- Hero Background Shape 1 -->
-      <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]">
-      </div>
-      <!-- Hero Background Shape 2 -->
-      <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]">
-      </div>
-    </div>
-  </section>
- <!-- bài mẫu là section-service -->
-  <section id="section-service">
-    <div class="global-container">
-        <div class="mb-10 lg:mb-16 xl:mb-20 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+      </section>
+      <!-- bài mẫu là section-service -->
+      <section id="section-service">
+        <div class="global-container">
+          <div class="mb-10 lg:mb-16 xl:mb-20 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1"
+            data-jos_scrolldirection="down">
             <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
-                <h2>Core features that make it valuable</h2>
+              <h2>Core features that make it valuable</h2>
             </div>
+          </div>
+          <ul
+            class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 jos"
+            data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./img/service-icon-black-1.svg" alt="" width="70" height="70">
+                <img src="./img/service-icon-orange-1.svg" alt="service-icon-orange-1" width="70" height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
+                  Resource Flexibility
+                </a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses
+                who are starting out.
+              </p>
+              <a class="relative inline-block h-[30px] w-[30px] duration-300"
+                href="https://azzle.netlify.app/service-details">
+                <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
+                <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </a>
+            </li>
+            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./img/service-icon-black-2.svg" alt="service-icon-black-2" width="70" height="70">
+                <img src="./img/service-icon-orange-2.svg" alt="service-icon-orange-1" width="70" height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </div>
+
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
+                  Managed Services
+                </a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses
+                who are starting out.
+              </p>
+              <a class="relative inline-block h-[30px] w-[30px] duration-300"
+                href="https://azzle.netlify.app/service-details">
+                <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
+                <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </a>
+            </li>
+            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./img/service-icon-black-3.svg" alt="service-icon-black-3" width="70" height="70">
+                <img src="./img/service-icon-orange-3.svg" alt="service-icon-orange-3" width="70" height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
+                  Web-Based Access
+                </a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses
+                who are starting out.
+              </p>
+              <a class="relative inline-block h-[30px] w-[30px] duration-300"
+                href="https://azzle.netlify.app/service-details">
+                <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
+                <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </a>
+            </li>
+            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./img/service-icon-black-4.svg" alt="service-icon-black-4" width="70" height="70">
+                <img src="./img/service-icon-orange-4.svg" alt="service-icon-orange-4" width="70" height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
+                  Resource Flexibility
+                </a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses
+                who are starting out.
+              </p>
+              <a class="relative inline-block h-[30px] w-[30px] duration-300"
+                href="https://azzle.netlify.app/service-details">
+                <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
+                <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
-            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                <div class="relative mb-9 h-[70px] w-[70px]">
-                    <img src="./img/service-icon-black-1.svg" alt="" width="70" height="70">
-                    <img src="./img/service-icon-orange-1.svg" alt="service-icon-orange-1" width="70" height="70" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </div>
-                <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                    <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
-                        Resource Flexibility
-                    </a>
-                </h3>
-                <p class="mb-12 duration-300 group-hover:text-white">
-                    This is an excellent option for people & small businesses
-                    who are starting out.
-                </p>
-                <a class="relative inline-block h-[30px] w-[30px] duration-300" href="https://azzle.netlify.app/service-details">
-                    <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
-                    <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </a>
-            </li>
-            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                <div class="relative mb-9 h-[70px] w-[70px]">
-                    <img src="./img/service-icon-black-2.svg" alt="service-icon-black-2" width="70" height="70">
-                    <img src="./img/service-icon-orange-2.svg" alt="service-icon-orange-1" width="70" height="70" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </div>
-
-                <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                    <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
-                        Managed Services
-                    </a>
-                </h3>
-                <p class="mb-12 duration-300 group-hover:text-white">
-                    This is an excellent option for people & small businesses
-                    who are starting out.
-                </p>
-                <a class="relative inline-block h-[30px] w-[30px] duration-300" href="https://azzle.netlify.app/service-details">
-                    <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
-                    <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </a>
-            </li>
-            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                <div class="relative mb-9 h-[70px] w-[70px]">
-                    <img src="./img/service-icon-black-3.svg" alt="service-icon-black-3" width="70" height="70">
-                    <img src="./img/service-icon-orange-3.svg" alt="service-icon-orange-3" width="70" height="70" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </div>
-                <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                    <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
-                        Web-Based Access
-                    </a>
-                </h3>
-                <p class="mb-12 duration-300 group-hover:text-white">
-                    This is an excellent option for people & small businesses
-                    who are starting out.
-                </p>
-                <a class="relative inline-block h-[30px] w-[30px] duration-300" href="https://azzle.netlify.app/service-details">
-                    <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
-                    <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </a>
-            </li>
-            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                <div class="relative mb-9 h-[70px] w-[70px]">
-                    <img src="./img/service-icon-black-4.svg" alt="service-icon-black-4" width="70" height="70">
-                    <img src="./img/service-icon-orange-4.svg" alt="service-icon-orange-4" width="70" height="70" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </div>
-                <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                    <a class="hover:text-colorOrangyRed" href="https://azzle.netlify.app/service-details">
-                        Resource Flexibility
-                    </a>
-                </h3>
-                <p class="mb-12 duration-300 group-hover:text-white">
-                    This is an excellent option for people & small businesses
-                    who are starting out.
-                </p>
-                <a class="relative inline-block h-[30px] w-[30px] duration-300" href="https://azzle.netlify.app/service-details">
-                    <img src="./img/arrow-right-black.svg" alt="arrow-right-black" width="30" height="30">
-                    <img src="./img/arrow-right-orange.svg" alt="arrow-right-black" width="30" height="30" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
-                </a>
-            </li>
-        </ul>
-    </div>
-  </section>
-
-  <!-- bài mẫu là content-section-1 -->
-  <section id="content-section-1">
-    <div class="global-container">
-        <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
+      </section>
+      <!-- bài mẫu là content-section-1 -->
+      <section id="content-section-1">
+        <div class="global-container">
+          <div class="pt-20 pd-20 grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
             <!-- Content Left Block -->
-            <div class="order-2 overflow-hidden rounded-md md:order-1 jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
-                <img src="./img/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full">
+            <div class="order-2 overflow-hidden rounded-md md:order-1 jos jos-fade-left" data-jos_animation="fade-left"
+              data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+              <img src="./img/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full">
             </div>
             <!-- Content Left Block -->
             <!-- Content Right Block -->
-            <div class="order-1 md:order-2 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+            <div class="order-1 md:order-2 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1"
+              data-jos_counter="0" data-jos_scrolldirection="down">
+              <!-- Section Content Block -->
+              <div class="mb-6">
+                <h2>Accessible to a wider audience</h2>
+              </div>
+              <!-- Section Content Block -->
+              <div class="text-lg leading-[1.4] lg:text-[21px]">
+                <p class="mb-7 last:mb-0">
+                  Advanced AI capabilities accessible to a broader audience,
+                  including small &amp; medium-sized businesses and individuals
+                  who may not have the resources or expertise to develop.
+                </p>
+                <p class="mb-7 last:mb-0">
+                  Advanced AI capabilities accessible to a broader audience,
+                  including small &amp; medium-sized businesses and individuals
+                  who may not have the resources or expertise to develop.
+                </p>
+              </div>
+            </div>
+            <!-- Content Right Block -->
+          </div>
+        </div>
+        <!-- Section Container -->
+      </section>
+      <!-- bài mẫu là content-section-2 -->
+      <section id="content-section-2">
+        <!-- Section Spacer -->
+        <div class="pt-20 pd-20 xl:pb-[150px]">
+          <!-- Section Container -->
+          <div class="global-container">
+            <div
+              class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+              <!-- Content Left Block -->
+              <div class="order-2 overflow-hidden rounded-md jos jos-fade-left" data-jos_animation="fade-left"
+                data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
+                <img src="./img/content-image-2.jpg" alt="content-image-2" width="526" height="450"
+                  class="h-auto w-full">
+              </div>
+              <!-- Content Left Block -->
+              <!-- Content Right Block -->
+              <div class="order-1 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1"
+                data-jos_counter="0" data-jos_scrolldirection="down">
                 <!-- Section Content Block -->
                 <div class="mb-6">
-                    <h2>Accessible to a wider audience</h2>
+                  <h2>Providing quick deploy solutions</h2>
                 </div>
                 <!-- Section Content Block -->
                 <div class="text-lg leading-[1.4] lg:text-[21px]">
-                    <p class="mb-7 last:mb-0">
-                        Advanced AI capabilities accessible to a broader audience,
-                        including small &amp; medium-sized businesses and individuals
-                        who may not have the resources or expertise to develop.
-                    </p>
-                    <p class="mb-7 last:mb-0">
-                        Advanced AI capabilities accessible to a broader audience,
-                        including small &amp; medium-sized businesses and individuals
-                        who may not have the resources or expertise to develop.
-                    </p>
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <ul
+                    class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30"
+                          class="h-full w-full">
+                      </div>
+                      Ready-to-use AI capabilities system
+                    </li>
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30"
+                          class="h-full w-full">
+                      </div>
+                      Users can quickly integrate AI features
+                    </li>
+                    <li class="flex items-start gap-x-3">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30"
+                          class="h-full w-full">
+                      </div>
+                      Time savings translate to cost savings
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <!-- Content Right Block -->
             </div>
-            <!-- Content Right Block -->
+          </div>
+          <!-- Section Container -->
         </div>
-    </div>
-    <!-- Section Container -->
-  </section>
+        <!-- Section Spacer -->
+      </section>
 
-  <!-- bài mẫu là content-section-2 -->
-  <section id="content-section-2">
-    <!-- Section Spacer -->
-    <div class="pb-20 xl:pb-[150px]">
-        <!-- Section Container -->
+      <!-- PHẦN CỦA UYÊN LÀM    -->
+
+      <!-- bài mẫu là funfact-section -->
+      <section id="supportAI">
+        <div class="mx-auto px-7">
+          <div
+            class="bg-black overflow-hidden rounded-[30px] lg:rounded-[50px] grid grid-cols-1 xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)] jos"
+            data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+            <!-- Funfact left  -->
+            <div class="funfact__left overflow-hidden rounded-[30px] lg:rounded-[50px] relative">
+              <img src="./img/funfact-image.jpg" alt="funfact-image"
+                class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full">
+              <!-- Play button  -->
+              <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
+                <div
+                  class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
+                  Play
+                  <div
+                    class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Funfact right  -->
+            <div
+              class="funfact__right self-center px-16 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
+              <div class="mb-8 lg:mb-16 xl:mb-6">
+                <h2 class="text-white">AI-powered that streamline tasks</h2>
+              </div>
+              <div class="text-left text-white text-lg leading-[1.4] lg:text-[21px]">
+                <p class="mb-7 last:mb-0">
+                  As your business grows or your AI SaaS needs change, you can easily adjust your subscription level to
+                  match those needs. This flexibility ensures that AI remains an asset.
+                </p>
+              </div>
+              <!-- Khoảng cách  -->
+              <div class="my-14 h-[1px] w-full"></div>
+              <!-- Counter  -->
+              <ul
+                class="flex flex-col justify-center gap-x-11 gap-y-8 xxl:gap-x-20 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left">
+                <li>
+                  <h3 class="text-colorOrangyRed text-5xl md:text-6xl lg:text-7xl xl:text-[120px]">
+                    <span class="counter">92</span>%
+                  </h3>
+                  <span class="block text-lg font-normal text-white lg:text-[21px]">
+                    Customer service inquiries
+                  </span>
+                </li>
+                <li>
+                  <h3 class="text-colorOrangyRed text-5xl md:text-6xl lg:text-7xl xl:text-[120px]">
+                    <span class="counter">75</span>%
+                  </h3>
+                  <span class="block text-lg font-normal text-white lg:text-[21px]">
+                    Using financial institutions
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bài mẫu là pricing-section -->
+      <section id="effectively">
+        <div class="m-0 pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+          <div class="global-container">
+            <!-- title  -->
+            <div class="jos mb-10 text-center lg:mb-12" data-jos_once="1" data-jos_animation="fade-up"
+              data-jos_counter="1" data-jos_scrolldirection="down">
+              <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
+                <h2>Cost-effectively build any software</h2>
+              </div>
+            </div>
+            <!-- pricing  -->
+            <div class="container mx-auto">
+              <!-- buttons  -->
+              <div class="jos flex justify-center" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1"
+                data-jos_scrolldirection="down">
+                <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
+                  <button class="tab-button price-button active" data-tab="monthly">
+                    Monthly
+                  </button>
+                  <button class="tab-button price-button" data-tab="annually">
+                    Annually
+                  </button>
+                </div>
+              </div>
+              <!-- monthly  -->
+              <div class="mt-12 lg:mt-16 xl:mt-20">
+                <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Beginner
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 10 members</span>
+
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $25<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This is an excellent option for people & small
+                      businesses who are starting out.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Starter
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 50 members</span>
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $89<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This plan is suitable for e-commerce stores as well as
+                      professional blogs.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Pro
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 100 members</span>
+
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $199<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Ideal for handling complicated projects enterprise-level
+                      projects, and websites.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                </ul>
+                <!-- annually  -->
+                <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Beginner
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 10 members</span>
+
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $240<span class="text-lg font-semibold">/Per year</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This is an excellent option for people & small
+                      businesses who are starting out.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Starter
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 50 members</span>
+
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $960<span class="text-lg font-semibold">/Per year</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      This plan is suitable for e-commerce stores as well as
+                      professional blogs.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                  <li
+                    class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
+                    data-jos_animation="flip" data-jos_delay="0">
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Pro
+                    </h3>
+                    <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                      to 100 members</span>
+
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                      $1800<span class="text-lg font-semibold leading-none">/Per year</span>
+                    </h4>
+                    <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                      Ideal for handling complicated projects enterprise-level
+                      projects, and websites.
+                    </p>
+                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white'
+                      href='#'>Choose
+                      the plan</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bài mẫu là faq-section -->
+      <section id="quickAsk">
+        <div class="pb-20 xl:pb-[150px]">
+          <div class="global-container">
+            <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+              <!-- FAQ Left -->
+              <div class="jos flex flex-col" data-jos_animation="fade-right">
+                <div class="mb-6">
+                  <div class="mx-auto md:mx-0 md:max-w-none">
+                    <h2>Freely ask us for more information</h2>
+                  </div>
+                </div>
+                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white hover:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+                    href='#'>Ask
+                    you questions</a>
+                </div>
+              </div>
+              <!-- FAQ Right -->
+              <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left" data-jos_once="false"
+                data-jos_timingfunction="ease-in-out" data-jos_duration="0.4" data-jos_counter="1">
+                <ul class="accordion">
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active">
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                      <p>How do I start AI SaaS?</p>
+                      <div class="accordion-icon">
+                        <img src="./img/plus.svg" alt="plus" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                      <p>Can I customize AI SaaS solutions?</p>
+                      <div class="accordion-icon">
+                        <img src="./img/plus.svg" alt="plus" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                      <p>How can AI benefit my business?</p>
+                      <div class="accordion-icon">
+                        <img src="./img/plus.svg" alt="plus" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bài mẫu là testimonial-section -->
+      <section id="feedback">
+        <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+          <div class="global-container">
+            <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
+              <div class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]">
+                <h2 class="text-white">Positive feedback from our users</h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-left" data-jos_delay="0.1">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  “This AI SaaS tool has revolutionized the way we process and
+                  analyze data. This is a game-changer for our business.”
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-1.jpg" alt="testimonial-img-1" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Max Weber
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      HR Manager
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-left" data-jos_delay="0.2">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  "It answers immediately, and we've seen a significant
+                  reduction in response time. Our customers love it and so do
+                  we!"
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-2.jpg" alt="testimonial-img-2" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Douglas Smith
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      Businessman
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-left" data-jos_delay="0.3">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  "It is accurate, fast and supports multiple languages
+                  support. It is a must for any international business
+                  success."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-3.jpg" alt="testimonial-img-3" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Abraham Maslo
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      Founder @ Marketing Company
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-right" data-jos_delay="0.1">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  "Security is a top concern for us, and AI SaaS takes it
+                  seriously. It's a reassuring layer of protection for our
+                  organization."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-4.jpg" alt="testimonial-img-4" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Jack Fayol
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      HR Manager
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-right" data-jos_delay="0.2">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  "We were concerned about integrating their APIs were well
+                  documented, and their support team was super cool."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-5.jpg" alt="testimonial-img-5" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Karen Lynn
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      Software Engineer
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
+                data-jos_animation="fade-right" data-jos_delay="0.3">
+                <div class="block">
+                  <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                </div>
+                <p>
+                  "The return on investment has exceeded our expectations.
+                  it's an investment in the future of our business."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./img/testimonial-img-6.jpg" alt="testimonial-img-6" width="60" height="60"
+                      class="h-full w-full object-cover object-center" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Henry Ochi
+                    </span>
+                    <span class="block text-sm font-light leading-[1.4]">
+                      Bank Manager
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- background 1  -->
+      <div
+        class="orange-gradient-1 absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]">
+      </div>
+      <!-- background 2  -->
+      <div
+        class="orange-gradient-2 absolute -left-[100px] top-[64%] -z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] rounded-[360px]">
+      </div>
+      </section>
+    </main>
+
+    <footer>
+      <footer
+        class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+        <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+          <div class="overflow-hidden">
+            <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60" height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                Start building software
+              </div>
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60" height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                Start building software
+              </div>
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60" height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                Start building software
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="global-container">
-            <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
-                <!-- Content Left Block -->
-                <div class="order-2 overflow-hidden rounded-md jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
-                    <img src="./img/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full">
-                </div>
-                <!-- Content Left Block -->
-                <!-- Content Right Block -->
-                <div class="order-1 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
-                    <!-- Section Content Block -->
-                    <div class="mb-6">
-                        <h2>Providing quick deploy solutions</h2>
-                    </div>
-                    <!-- Section Content Block -->
-                    <div class="text-lg leading-[1.4] lg:text-[21px]">
-                        <p class="mb-7 last:mb-0">
-                            Our AI SaaS solutions can be quickly deployed, enabling
-                            users to start benefiting from AI capabilities without
-                            lengthy setup and development times in fast-paced
-                            industries.
-                        </p>
-                        <ul class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
-                            <li class="flex items-start gap-x-3">
-                                <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
-                                </div>
-                                Ready-to-use AI capabilities system
-                            </li>
-                            <li class="flex items-start gap-x-3">
-                                <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
-                                </div>
-                                Users can quickly integrate AI features
-                            </li>
-                            <li class="flex items-start gap-x-3">
-                                <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                    <img src="./img/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
-                                </div>
-                                Time savings translate to cost savings
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Content Right Block -->
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <div
+            class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+            <div class="flex flex-col gap-y-6">
+              <a class='inline-block' href='#'><img src="./img/logo.png" alt="logo" width="96"
+                  height="24" /></a>
+              <p>
+                Our mission is to harness the power of AI to solve complex
+                business challenges & decision-makers with data-driven insights,
+                and enhance user experiences across digital platforms.
+              </p>
+              <p>
+                Website: <a href="https://www.example.com">www.example.com</a>
+              </p>
             </div>
+            <div class="flex flex-col gap-y-6">
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Primary Pages
+              </h4>
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Home</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>About
+                    Us</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                    href='#'>Services</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                    href='#'>pricing</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                    href='#'>Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-y-6">
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Utility pages
+              </h4>
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Signup</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Login</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>404 Not
+                    found</a>
+                </li>
+                <li>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                    href='#'>Password
+                    Reset</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-y-6">
+              <h4 class="text-[21px] font-semibold capitalize text-black">
+                Subscribe to our newsletter
+              </h4>
+              <!-- form  -->
+              <form action="#" method="post" class="">
+                <div class="relative h-[50px] max-w-[300px]">
+                  <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Enter your email"
+                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                    required />
+                  <button type="submit"
+                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
+                    <img src="./img/arrow-right-large.svg" alt="newsletter" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- footer bottom  -->
+          <div class="py-9 text-center">
+            <p>&copy; Copyright 2023, All Rights Reserved by Mthemeus</p>
+          </div>
         </div>
-        <!-- Section Container -->
-    </div>
-    <!-- Section Spacer -->
-</section>
+        <!-- footer background 1  -->
+        <div
+          class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
+        </div>
+        <!-- footer background 2  -->
+        <div
+          class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
+        </div>
+      </footer>
+    </footer>
+  </div>
 
-  <!-- PHẦN CỦA UYÊN LÀM    -->
+  <!-- link jos library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jos-animation/0.9.2/jos.js"
+    integrity="sha512-ZbNmgrMmWwQspNz6WQ1HnqLEPMXE4PyJBVnuc10e4gwJhrycze2IzjDQPx4CxkOBnUyt5wNCekdeTRJOe8J4WA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- bài mẫu là funfact-section -->
-  <section id="supportAI"></section>
+  <script>
+    JOS.init();
+  </script>
 
-  <!-- bài mẫu là pricing-section -->
-  <section id="effectively"></section>
+  <!-- link swiper library-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- bài mẫu là faq-section -->
-  <section id="quickAsk"></section>
-
-  <!-- bài mẫu là testimonial-section -->
-  <section id="feedback"></section>
-</main>
-
-      <footer></footer>
-    </div>
-</div> 
-    <!-- link jos library -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jos-animation/0.9.2/jos.js"
-      integrity="sha512-ZbNmgrMmWwQspNz6WQ1HnqLEPMXE4PyJBVnuc10e4gwJhrycze2IzjDQPx4CxkOBnUyt5wNCekdeTRJOe8J4WA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script>
-      JOS.init();
-    </script>
-
-    <!-- link swiper library-->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-     <script>
-      const swiper = new Swiper('.swiper', {
-        loop: true, 
-        navigation: {
-          nextEl: '.swiper-button-next', 
-          prevEl: '.swiper-button-prev',
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 2,
+      spaceBetween: 105,
+      breakpoints: {
+        768: {
+          slidesPerView: 3, // Hiển thị 4 slide trên màn hình ≥ 1024px
+          spaceBetween: 30,
         },
-        pagination: {
-          el: '.swiper-pagination', 
-          clickable: true,          
-        },
-        slidesPerView: 2,
-        spaceBetween: 105,
-        breakpoints: {
-          768: {
-            slidesPerView: 3, // Hiển thị 4 slide trên màn hình ≥ 1024px
-            spaceBetween: 30,
-          },
 
-          992: {
-            slidesPerView: 4, // Hiển thị 4 slide trên màn hình ≥ 1024px
-            spaceBetween: 30,
-          },
-
-          1200: {
-            slidesPerView: 5, // Hiển thị 4 slide trên màn hình ≥ 1024px
-            spaceBetween: 30,
-          },
+        992: {
+          slidesPerView: 4, // Hiển thị 4 slide trên màn hình ≥ 1024px
+          spaceBetween: 30,
         },
-        autoplay: {
-          delay: 4000,
-        },
-      });
-    </script>
 
-    <!-- flowbite -->
-    <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
-    
-  </body>
+        1200: {
+          slidesPerView: 5, // Hiển thị 4 slide trên màn hình ≥ 1024px
+          spaceBetween: 30,
+        },
+      },
+      autoplay: {
+        delay: 4000,
+      },
+    });
+  </script>
+
+  <!-- link fslightbox  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"></script>
+
+  <!-- counterup  -->
+  <!-- Thư viện jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- Thư viện Jquery waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- Thư viện count up -->
+  <script src="./../js/jquery.countup.min.js"></script>
+  <!-- Count up JS  -->
+  <script>
+    $('.counter').countUp();
+  </script>
+
+  <!-- flowbite -->
+  <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+</body>
+
 </html>

@@ -6,6 +6,18 @@ module.exports = {
       container: {
         center: true,
       },
+      backgroundColor: {
+        colorOrangyRed: "#FE330A",
+      },
+
+      textColor: {
+        colorOrangyRed: "#FE330A",
+      },
+
+      borderColor:{
+        colorOrangyRed: "#FE330A",
+      },
+
     },
   },
   plugins: ["flowbite/plugin"],
