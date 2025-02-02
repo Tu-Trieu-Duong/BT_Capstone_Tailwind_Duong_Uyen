@@ -12,7 +12,9 @@
   <!-- Font chữ  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- link jos library -->
   <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
@@ -591,22 +593,27 @@
 
       <!-- bài mẫu là funfact-section -->
       <section id="supportAI">
-        <div class="mx-auto px-7">
+        <div class="mx-auto max-w-[90rem] px-5">
+          <!-- Dùng jos animation  -->
           <div
             class="bg-black overflow-hidden rounded-[30px] lg:rounded-[50px] grid grid-cols-1 xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)] jos"
-            data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
+            data-jos_once="1" data-jos_delay="0.1" data-jos_animation="fade-up" data-jos_counter="1"
+            data-jos_scrolldirection="down">
             <!-- Funfact left  -->
             <div class="funfact__left overflow-hidden rounded-[30px] lg:rounded-[50px] relative">
+              <!-- Đảm bảo khi phóng to, thu nhỏ, hình không bị biến dạng  -->
               <img src="./img/funfact-image.jpg" alt="funfact-image"
                 class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full">
               <!-- Play button  -->
               <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
                 class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
+                <!-- Vẽ hình tròn  -->
                 <div
-                  class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
+                  class="relative h-[7.5rem] w-[7.5rem]  rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] flex items-center justify-center transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
                   Play
+                  <!-- Dấu nhấp nháy màu xám  -->
                   <div
-                    class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
+                    class="rounded-full bg-gray-600 opacity-30 absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] ">
                   </div>
                 </div>
               </a>
@@ -618,16 +625,16 @@
                 <h2 class="text-white">AI-powered that streamline tasks</h2>
               </div>
               <div class="text-left text-white text-lg leading-[1.4] lg:text-[21px]">
-                <p class="mb-7 last:mb-0">
+                <p>
                   As your business grows or your AI SaaS needs change, you can easily adjust your subscription level to
                   match those needs. This flexibility ensures that AI remains an asset.
                 </p>
               </div>
               <!-- Khoảng cách  -->
               <div class="my-14 h-[1px] w-full"></div>
-              <!-- Counter  -->
+              <!-- Counterup  -->
               <ul
-                class="flex flex-col justify-center gap-x-11 gap-y-8 xxl:gap-x-20 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left">
+                class="flex flex-col justify-center gap-x-11 gap-y-8 xl:gap-x-20 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left">
                 <li>
                   <h3 class="text-colorOrangyRed text-5xl md:text-6xl lg:text-7xl xl:text-[120px]">
                     <span class="counter">92</span>%
@@ -677,7 +684,7 @@
               </div>
               <!-- monthly  -->
               <div class="mt-12 lg:mt-16 xl:mt-20">
-                <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 is-visible">
                   <li
                     class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
                     data-jos_animation="flip" data-jos_delay="0">
@@ -687,7 +694,6 @@
                     </h3>
                     <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
                       to 10 members</span>
-
                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
                     <h4
                       class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
@@ -748,7 +754,7 @@
                   </li>
                 </ul>
                 <!-- annually  -->
-                <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <ul id="annually" class="tab-content grid is-hidden grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
                   <li
                     class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
                     data-jos_animation="flip" data-jos_delay="0">
@@ -781,7 +787,6 @@
                     </h3>
                     <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
                       to 50 members</span>
-
                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
                     <h4
                       class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
@@ -831,20 +836,20 @@
           <div class="global-container">
             <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
               <!-- FAQ Left -->
-              <div class="jos flex flex-col" data-jos_animation="fade-right">
+              <div class="jos flex flex-col" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
                 <div class="mb-6">
                   <div class="mx-auto md:mx-0 md:max-w-none">
                     <h2>Freely ask us for more information</h2>
                   </div>
                 </div>
                 <div class="text-lg leading-[1.4] lg:text-[21px]">
-                  <p class="mb-7 last:mb-0">
+                  <p class="mb-7">
                     Our AI SaaS solutions can be quickly deployed, enabling
                     users to start benefiting from AI capabilities without
                     lengthy setup and development times in fast-paced
                     industries.
                   </p>
-                  <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white hover:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+                  <a class="mt-5 font-bold text-sm px-4 py-4 button  rounded-[50px] border-2 border-black bg-black text-white hover:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                     href='#'>Ask
                     you questions</a>
                 </div>
@@ -921,8 +926,8 @@
               </div>
             </div>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-left" data-jos_delay="0.1">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-left"
+                data-jos_delay="0.1">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -945,8 +950,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-left" data-jos_delay="0.2">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-left"
+                data-jos_delay="0.2">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -970,8 +975,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-left" data-jos_delay="0.3">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-left"
+                data-jos_delay="0.3">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -995,8 +1000,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-right" data-jos_delay="0.1">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-right"
+                data-jos_delay="0.1">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -1020,8 +1025,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-right" data-jos_delay="0.2">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-right"
+                data-jos_delay="0.2">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -1044,8 +1049,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white"
-                data-jos_animation="fade-right" data-jos_delay="0.3">
+              <div class="jos flex flex-col gap-y-8 rounded-[10px] p-[30px] text-white" data-jos_animation="fade-right"
+                data-jos_delay="0.3">
                 <div class="block">
                   <img src="./img/rating.svg" alt="rating" width="146" height="25" />
                 </div>
@@ -1088,8 +1093,9 @@
       <footer
         class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
         <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+          <!-- Chữ chạy  -->
           <div class="overflow-hidden">
-            <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+            <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap slider-content">
               <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60" height="60"
                 class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
               <div
@@ -1112,12 +1118,12 @@
           </div>
         </div>
         <div class="global-container">
-          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
           <div
             class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+            <!-- Cột 1  -->
             <div class="flex flex-col gap-y-6">
-              <a class='inline-block' href='#'><img src="./img/logo.png" alt="logo" width="96"
-                  height="24" /></a>
+              <a class='inline-block' href='#'><img src="./img/logo.png" alt="logo" width="96" height="24" /></a>
               <p>
                 Our mission is to harness the power of AI to solve complex
                 business challenges & decision-makers with data-driven insights,
@@ -1127,6 +1133,7 @@
                 Website: <a href="https://www.example.com">www.example.com</a>
               </p>
             </div>
+            <!-- Cột 2  -->
             <div class="flex flex-col gap-y-6">
               <h4 class="text-[21px] font-semibold capitalize text-black">
                 Primary Pages
@@ -1140,19 +1147,17 @@
                     Us</a>
                 </li>
                 <li>
-                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                    href='#'>Services</a>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Services</a>
                 </li>
                 <li>
-                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                    href='#'>pricing</a>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>pricing</a>
                 </li>
                 <li>
-                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                    href='#'>Contact</a>
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Contact</a>
                 </li>
               </ul>
             </div>
+            <!-- Cột 3  -->
             <div class="flex flex-col gap-y-6">
               <h4 class="text-[21px] font-semibold capitalize text-black">
                 Utility pages
@@ -1169,12 +1174,12 @@
                     found</a>
                 </li>
                 <li>
-                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                    href='#'>Password
+                  <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed' href='#'>Password
                     Reset</a>
                 </li>
               </ul>
             </div>
+            <!-- Cột 4  -->
             <div class="flex flex-col gap-y-6">
               <h4 class="text-[21px] font-semibold capitalize text-black">
                 Subscribe to our newsletter
@@ -1212,9 +1217,7 @@
   </div>
 
   <!-- link jos library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jos-animation/0.9.2/jos.js"
-    integrity="sha512-ZbNmgrMmWwQspNz6WQ1HnqLEPMXE4PyJBVnuc10e4gwJhrycze2IzjDQPx4CxkOBnUyt5wNCekdeTRJOe8J4WA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
 
   <script>
     JOS.init();
@@ -1274,6 +1277,51 @@
     $('.counter').countUp();
   </script>
 
+<!-- Switch từ monthy thành annually  -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Loại bỏ class 'active' khỏi tất cả các nút
+        buttons.forEach((btn) => btn.classList.remove("active"));
+
+        // Ẩn tất cả các tab nội dung
+        contents.forEach((content) => content.classList.add("hidden"));
+
+        // Thêm class 'active' cho nút được click
+        this.classList.add("active");
+
+        // Hiển thị tab nội dung tương ứng
+        const tabId = this.getAttribute("data-tab");
+        document.getElementById(tabId).classList.remove("hidden");
+      });
+    });
+  });
+</script>
+
+<!-- Đóng mở thẻ FAQ  -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach((item) => {
+        item.addEventListener("click", function () {
+            // Đóng tất cả các mục
+            accordionItems.forEach((i) => i.classList.remove("active"));
+            
+            // Mở mục được click
+            this.classList.add("active");
+        });
+    });
+
+    // Đảm bảo luôn có một mục mở mặc định
+    accordionItems[0].classList.add("active");
+});
+
+ </script>
   <!-- flowbite -->
   <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
 
