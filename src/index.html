@@ -19,177 +19,179 @@
     <!-- PHẦN CỦA DƯƠNG LÀM -->
 <header>
   <nav class="global-container">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between my-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./img/logo-dark.png" alt="logo" width="96" width="24" />
       </a>
-      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden" aria-controls="navbar-multi-level" aria-expanded="false">
+      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center  text-sm rounded-lg lg:hidden" aria-controls="navbar-multi-level" aria-expanded="false">
               <svg class="w-5 h-5 right-6 absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
 
+      <div class="max-lg:bg-white max-lg:w-[85%] max-lg:top-full max-lg:left-0 max-lg:absolute">
       <!-- Menu Demo -->
-      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-        <ul class="flex flex-col font-medium md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black  md:border-0  md:p-0 md:w-auto duration-500 me-5">Demo<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Demo-->
-              <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 text-black">
-                  <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 01</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 02</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 03</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 04</a>
-                    </li>
-                  </ul>
-              </div>
-          </li>
-
-          <!-- Menu About -->
-          <li>
-            <a href="#" class="block py-2 px-3 text-black rounded-sm md:bg-transparen md:p-0 me-5" aria-current="page">About</a>
-          </li>
-
-          <!-- Menu Services -->
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar0" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Services<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Services-->
-              <div id="dropdownNavbar0" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                  <ul class="py-2 text-sm text-black font-medium" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500">Services</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500 ">Services Details</a>
-                    </li>
-                  </ul>
-              </div>
-          </li>
-
-          <!-- Menu Pages -->
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto me-5">Pages<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu Pages-->
-              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                  <ul class="py-2 text-sm text-black " aria-labelledby="dropdownLargeButton">
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown1" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:text-red-600 duration-500 font-medium">Blogs<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <!-- Dropdown menu Pages Blogs -->
-                      <div id="doubleDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm text-black hover:text-red-500 font-medium" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blogs</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blog Details</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                    <!-- Dropdown menu Pages Team -->
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 text-black hover:text-red-600 font-medium">Team<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm font-medium text-black hover:text-red-600" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team Details</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                    <!-- Dropdown menu Pages FAQ -->
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown3" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">FAQ<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-1</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-2</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                    <!-- Dropdown menu Pages Blogs -->
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown4" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">Portfolio<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio Details</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                    <!-- Dropdown menu Pages Pricing -->
-                    <li>
-                      <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Pricing</a>
-                    </li>
-                    <!-- Dropdown menu Pages Utilities -->
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown5" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Utilities<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
-                      <div id="doubleDropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-                          <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Eror 404</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Login</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Signup</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Reset Password</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                  </ul>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-multi-level">
+          <ul class="flex flex-col font-medium lg:p-0 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0">
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black  lg:border-0  lg:p-0 lg:w-auto duration-500 me-5">Demo<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg></button>
+                <!-- Dropdown menu Demo-->
+                <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 text-black">
+                    <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 01</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 02</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 03</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 font-medium duration-500">Home 04</a>
+                      </li>
+                    </ul>
                 </div>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
-          </li>
-        </ul>
+            </li>
+
+            <!-- Menu About -->
+            <li>
+              <a href="#" class="block py-2 px-3 text-black rounded-sm lg:bg-transparen lg:p-0 me-5" aria-current="page">About</a>
+            </li>
+
+            <!-- Menu Services -->
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar0" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-black lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto me-5">Services<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg></button>
+                <!-- Dropdown menu Services-->
+                <div id="dropdownNavbar0" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                    <ul class="py-2 text-sm text-black font-medium" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500">Services</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-red-600 duration-500 ">Services Details</a>
+                      </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Menu Pages -->
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto me-5">Pages<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg></button>
+                <!-- Dropdown menu Pages-->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                    <ul class="py-2 text-sm text-black " aria-labelledby="dropdownLargeButton">
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown1" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:text-red-600 duration-500 font-medium">Blogs<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <!-- Dropdown menu Pages Blogs -->
+                        <div id="doubleDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-black hover:text-red-500 font-medium" aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blogs</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Blog Details</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Dropdown menu Pages Team -->
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 text-black hover:text-red-600 font-medium">Team<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <div id="doubleDropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm font-medium text-black hover:text-red-600" aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Team Details</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Dropdown menu Pages FAQ -->
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown3" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">FAQ<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <div id="doubleDropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm" aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-1</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">FAQ-2</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Dropdown menu Pages Blogs -->
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown4" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600">Portfolio<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <div id="doubleDropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Portfolio Details</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Dropdown menu Pages Pricing -->
+                      <li>
+                        <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Pricing</a>
+                      </li>
+                      <!-- Dropdown menu Pages Utilities -->
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown5" data-dropdown-trigger="hover" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Utilities<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <div id="doubleDropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm " aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Eror 404</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Login</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Signup</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 font-medium text-black hover:text-red-600 duration-500">Reset Password</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 lg:hover:bg-transparent lg:border-0 lg:p-0">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="flex items-center justify-center">
-        <button type="button" class="relative overflow-hidden group hidden md:block text-black bg-transparent hover:text-white border border-gray-400 font-medium rounded-full text-sm px-8 py-3 text-center me-8">
+        <button type="button" class="relative overflow-hidden group hidden lg:block text-black bg-transparent hover:text-white border border-gray-400 font-medium rounded-full text-sm px-8 py-3 text-center me-8">
           <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
           <a href="https://azzle.netlify.app/login" class="relative z-10 font-extrabold">Login</a>
         </button>
-        <button type="button" class="relative overflow-hidden group hidden md:block text-white bg-black hover:text-white font-medium rounded-full text-sm px-7 py-3 text-center">
+        <button type="button" class="relative overflow-hidden group hidden lg:block text-white bg-black hover:text-white font-medium rounded-full text-sm px-7 py-3 text-center">
           <span class="absolute inset-0 bg-orange-700 transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0"></span>
           <a href="https://azzle.netlify.app/signup" class="relative z-10 font-extrabold">Sign up free</a>
         </button>
@@ -198,9 +200,8 @@
   </nav>
 </header>
 
-
 <main>  
-  <!-- bài mẫu là section-hero -->
+  <!-- section-hero -->
   <section id="section-hero">
     <div class="relative z-[1] rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
       <div class="global-container">
@@ -224,7 +225,6 @@
                   <a href="https://azzle.netlify.app/" class="relative z-10 font-extrabold">Learn more</a>
               </button>
             </div>
-
           </div>
         </div>
         <div class="hero-img overflow-hidden rounded-2xl bg-black jos" data-jos_animation="zoom" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
@@ -273,15 +273,13 @@
       
         </div>
       </div>
-      <!-- Hero Background Shape 1 -->
       <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]">
       </div>
-      <!-- Hero Background Shape 2 -->
       <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]">
       </div>
     </div>
   </section>
- <!-- bài mẫu là section-service -->
+ <!-- section-service -->
   <section id="section-service">
     <div class="global-container">
         <div class="mb-10 lg:mb-16 xl:mb-20 jos" data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrolldirection="down">
@@ -371,22 +369,17 @@
     </div>
   </section>
 
-  <!-- bài mẫu là content-section-1 -->
+  <!-- content-section-1 -->
   <section id="content-section-1">
     <div class="global-container">
         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
-            <!-- Content Left Block -->
             <div class="order-2 overflow-hidden rounded-md md:order-1 jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
                 <img src="./img/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full">
             </div>
-            <!-- Content Left Block -->
-            <!-- Content Right Block -->
             <div class="order-1 md:order-2 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
-                <!-- Section Content Block -->
                 <div class="mb-6">
                     <h2>Accessible to a wider audience</h2>
                 </div>
-                <!-- Section Content Block -->
                 <div class="text-lg leading-[1.4] lg:text-[21px]">
                     <p class="mb-7 last:mb-0">
                         Advanced AI capabilities accessible to a broader audience,
@@ -400,31 +393,22 @@
                     </p>
                 </div>
             </div>
-            <!-- Content Right Block -->
         </div>
     </div>
-    <!-- Section Container -->
   </section>
 
   <!-- bài mẫu là content-section-2 -->
   <section id="content-section-2">
-    <!-- Section Spacer -->
     <div class="pb-20 xl:pb-[150px]">
-        <!-- Section Container -->
         <div class="global-container">
             <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
-                <!-- Content Left Block -->
                 <div class="order-2 overflow-hidden rounded-md jos jos-fade-left" data-jos_animation="fade-left" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
                     <img src="./img/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full">
                 </div>
-                <!-- Content Left Block -->
-                <!-- Content Right Block -->
                 <div class="order-1 jos jos-fade-right" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="0" data-jos_scrolldirection="down">
-                    <!-- Section Content Block -->
                     <div class="mb-6">
                         <h2>Providing quick deploy solutions</h2>
                     </div>
-                    <!-- Section Content Block -->
                     <div class="text-lg leading-[1.4] lg:text-[21px]">
                         <p class="mb-7 last:mb-0">
                             Our AI SaaS solutions can be quickly deployed, enabling
@@ -454,12 +438,9 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Content Right Block -->
             </div>
         </div>
-        <!-- Section Container -->
     </div>
-    <!-- Section Spacer -->
 </section>
 
   <!-- PHẦN CỦA UYÊN LÀM    -->
