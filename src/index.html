@@ -836,20 +836,21 @@
           <div class="global-container">
             <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
               <!-- FAQ Left -->
-              <div class="jos flex flex-col" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+              <div class="jos flex flex-col" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="1"
+                data-jos_scrolldirection="down">
                 <div class="mb-6">
                   <div class="mx-auto md:mx-0 md:max-w-none">
                     <h2>Freely ask us for more information</h2>
                   </div>
                 </div>
                 <div class="text-lg leading-[1.4] lg:text-[21px]">
-                  <p class="mb-7">
+                  <p class="mb-7 last:mb-0">
                     Our AI SaaS solutions can be quickly deployed, enabling
                     users to start benefiting from AI capabilities without
                     lengthy setup and development times in fast-paced
                     industries.
                   </p>
-                  <a class="mt-5 font-bold text-sm px-4 py-4 button rounded-[50px] border-2 border-black bg-black text-white hover:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                  <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white hover:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
                     href='#'>Ask
                     you questions</a>
                 </div>
@@ -1118,7 +1119,7 @@
           </div>
         </div>
         <div class="global-container">
-                    <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
           <div
             class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
             <!-- Cột 1  -->
@@ -1277,51 +1278,51 @@
     $('.counter').countUp();
   </script>
 
-<!-- Switch từ monthy thành annually  -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".tab-button");
-    const contents = document.querySelectorAll(".tab-content");
+  <!-- Switch từ monthy thành annually  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".tab-button");
+      const contents = document.querySelectorAll(".tab-content");
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", function () {
-        // Loại bỏ class 'active' khỏi tất cả các nút
-        buttons.forEach((btn) => btn.classList.remove("active"));
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Loại bỏ class 'active' khỏi tất cả các nút
+          buttons.forEach((btn) => btn.classList.remove("active"));
 
-        // Ẩn tất cả các tab nội dung
-        contents.forEach((content) => content.classList.add("hidden"));
+          // Ẩn tất cả các tab nội dung
+          contents.forEach((content) => content.classList.add("hidden"));
 
-        // Thêm class 'active' cho nút được click
-        this.classList.add("active");
+          // Thêm class 'active' cho nút được click
+          this.classList.add("active");
 
-        // Hiển thị tab nội dung tương ứng
-        const tabId = this.getAttribute("data-tab");
-        document.getElementById(tabId).classList.remove("hidden");
+          // Hiển thị tab nội dung tương ứng
+          const tabId = this.getAttribute("data-tab");
+          document.getElementById(tabId).classList.remove("hidden");
+        });
       });
     });
-  });
-</script>
+  </script>
 
-<!-- Đóng mở thẻ FAQ  -->
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const accordionItems = document.querySelectorAll(".accordion-item");
+  <!-- Đóng mở thẻ FAQ  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const accordionItems = document.querySelectorAll(".accordion-item");
 
-    accordionItems.forEach((item) => {
+      accordionItems.forEach((item) => {
         item.addEventListener("click", function () {
-            // Đóng tất cả các mục
-            accordionItems.forEach((i) => i.classList.remove("active"));
-            
-            // Mở mục được click
-            this.classList.add("active");
+          // Đóng tất cả các mục
+          accordionItems.forEach((i) => i.classList.remove("active"));
+
+          // Mở mục được click
+          this.classList.add("active");
         });
+      });
+
+      // Đảm bảo luôn có một mục mở mặc định
+      accordionItems[0].classList.add("active");
     });
 
-    // Đảm bảo luôn có một mục mở mặc định
-    accordionItems[0].classList.add("active");
-});
-
- </script>
+  </script>
   <!-- flowbite -->
   <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
 
