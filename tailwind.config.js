@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "../node_modules/flowbite"],
+  content: ["./src/**/*.{html,js}", "../node_modules/flowbite**/*.js"],
   theme: {
     extend: {
       container: {
@@ -14,12 +14,11 @@ module.exports = {
         colorOrangyRed: "#FE330A",
       },
 
-      borderColor:{
+      borderColor: {
         colorOrangyRed: "#FE330A",
       },
-
     },
   },
-  plugins: ["flowbite/plugin"],
+  plugins: [require("flowbite/plugin-windicss")],
 };
 
